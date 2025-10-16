@@ -30,72 +30,81 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(50, 30);
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(308, 145);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(101, 20);
+            this.lblUsername.Size = new System.Drawing.Size(151, 25);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Tên đăng nhập:";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(180, 27);
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(536, 140);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(200, 27);
+            this.txtUsername.Size = new System.Drawing.Size(200, 30);
             this.txtUsername.TabIndex = 1;
             // 
             // lblFullname
             // 
             this.lblFullname.AutoSize = true;
-            this.lblFullname.Location = new System.Drawing.Point(50, 75);
+            this.lblFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullname.Location = new System.Drawing.Point(308, 190);
             this.lblFullname.Name = "lblFullname";
-            this.lblFullname.Size = new System.Drawing.Size(67, 20);
+            this.lblFullname.Size = new System.Drawing.Size(101, 25);
             this.lblFullname.TabIndex = 2;
             this.lblFullname.Text = "Họ và tên:";
             // 
             // txtFullname
             // 
-            this.txtFullname.Location = new System.Drawing.Point(180, 72);
+            this.txtFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFullname.Location = new System.Drawing.Point(536, 179);
             this.txtFullname.Name = "txtFullname";
-            this.txtFullname.Size = new System.Drawing.Size(200, 27);
+            this.txtFullname.Size = new System.Drawing.Size(200, 30);
             this.txtFullname.TabIndex = 3;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(50, 120);
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(308, 235);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(72, 20);
+            this.lblPassword.Size = new System.Drawing.Size(99, 25);
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Mật khẩu:";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(180, 117);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(536, 230);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(200, 27);
+            this.txtPassword.Size = new System.Drawing.Size(200, 30);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // lblConfirm
             // 
             this.lblConfirm.AutoSize = true;
-            this.lblConfirm.Location = new System.Drawing.Point(50, 165);
+            this.lblConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirm.Location = new System.Drawing.Point(308, 280);
             this.lblConfirm.Name = "lblConfirm";
-            this.lblConfirm.Size = new System.Drawing.Size(124, 20);
+            this.lblConfirm.Size = new System.Drawing.Size(187, 25);
             this.lblConfirm.TabIndex = 6;
             this.lblConfirm.Text = "Xác nhận mật khẩu:";
             // 
             // txtConfirm
             // 
-            this.txtConfirm.Location = new System.Drawing.Point(180, 162);
+            this.txtConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirm.Location = new System.Drawing.Point(536, 280);
             this.txtConfirm.Name = "txtConfirm";
-            this.txtConfirm.Size = new System.Drawing.Size(200, 27);
+            this.txtConfirm.Size = new System.Drawing.Size(200, 30);
             this.txtConfirm.TabIndex = 7;
             this.txtConfirm.UseSystemPasswordChar = true;
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(180, 210);
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(616, 334);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(120, 35);
             this.btnRegister.TabIndex = 8;
@@ -106,16 +115,16 @@
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblMessage.Location = new System.Drawing.Point(180, 260);
+            this.lblMessage.Location = new System.Drawing.Point(319, 339);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(0, 20);
+            this.lblMessage.Size = new System.Drawing.Size(0, 25);
             this.lblMessage.TabIndex = 9;
             // 
             // FormRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.ClientSize = new System.Drawing.Size(450, 300);
+            this.ClientSize = new System.Drawing.Size(981, 510);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.txtConfirm);
@@ -130,6 +139,7 @@
             this.Text = "Đăng ký tài khoản";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label lblUsername;
