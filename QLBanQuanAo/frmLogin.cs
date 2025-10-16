@@ -87,5 +87,10 @@ namespace QLBanQuanAo
 
         // Phương thức trống, có thể xóa trong file gốc
         private void groupBox1_Enter(object sender, EventArgs e) { }
+
+        private void btnDN_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
