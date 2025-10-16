@@ -1,4 +1,5 @@
 ﻿using QLBanQuanAo;
+using QLBanQuanAo.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace QLBanQuanAo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormRegister());
+            Application.Run(new frmChiTietSanPham(1));
         }
     }
 }
