@@ -1,79 +1,40 @@
-﻿using QLBanQuanAo;
-using System;
-using System.Data.SqlClient;
+﻿using System;
 using System.Windows.Forms;
+using QLBanQuanAo.BUS;
 
-namespace QuanLyBanVe
+namespace QLBanQuanAo
 {
     public partial class FormRegister : Form
     {
-        string connectionString = @"Data Source=LAPTOP-J1Q2HGTO\SQLEXPRESS;Initial Catalog=QLBanQuanAo;Integrated Security=True";
+        private AccountBUS accountBUS = new AccountBUS();
 
         public FormRegister()
         {
             InitializeComponent();
         }
 
-        private void btnDangKy_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
-            string tenDangNhap = txtTenDangNhap.Text.Trim();
-            string hoTen = txtHoTen.Text.Trim();
-            string matKhau = txtMatKhau.Text;
-            string xacNhan = txtXacNhan.Text;
+            string username = txtUsername.Text.Trim();
+            string fullname = txtFullname.Text.Trim();
+            string password = txtPassword.Text.Trim();
+            string confirm = txtConfirm.Text.Trim();
 
-            if (tenDangNhap == "" || hoTen == "" || matKhau == "" || xacNhan == "")
+            string message = accountBUS.RegisterAccount(username, password, confirm, fullname);
+
+            lblMessage.Text = message;
+            if (message == "Đăng ký thành công!")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                lblMessage.ForeColor = System.Drawing.Color.Green;
+                txtUsername.Clear();
+                txtFullname.Clear();
+                txtPassword.Clear();
+                txtConfirm.Clear();
             }
-
-            if (matKhau != xacNhan)
+            else
             {
-                MessageBox.Show("Mật khẩu xác nhận không khớp!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                lblMessage.ForeColor = System.Drawing.Color.Red;
             }
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    conn.Open();
-                    string queryCheck = "SELECT COUNT(*) FROM Account WHERE TenDangNhap = @TenDangNhap";
-                    SqlCommand cmdCheck = new SqlCommand(queryCheck, conn);
-                    cmdCheck.Parameters.AddWithValue("@TenDangNhap", tenDangNhap);
-                    int count = (int)cmdCheck.ExecuteScalar();
-
-                    if (count > 0)
-                    {
-                        MessageBox.Show("Tên đăng nhập đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
-
-                    string query = "INSERT INTO Account (TenDangNhap, MatKhau, HoTen) VALUES (@TenDangNhap, @MatKhau, @HoTen)";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@TenDangNhap", tenDangNhap);
-                    cmd.Parameters.AddWithValue("@MatKhau", matKhau);
-                    cmd.Parameters.AddWithValue("@HoTen", hoTen);
-                    cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Đăng ký thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    frmLogin f = new frmLogin();
-                    f.Show();
-                    this.Hide();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
-            }
-        }
-
-        private void btnQuayLai_Click(object sender, EventArgs e)
-        {
-            frmLogin f = new frmLogin();
-            f.Show();
-            this.Hide();
         }
     }
 }
