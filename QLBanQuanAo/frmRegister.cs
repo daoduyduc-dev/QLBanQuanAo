@@ -7,7 +7,7 @@ namespace QuanLyBanVe
 {
     public partial class FormRegister : Form
     {
-        string connectionString = @"Data Source=.;Initial Catalog=QuanLyBanVe;Integrated Security=True";
+        string connectionString = @"Data Source=LAPTOP-J1Q2HGTO\SQLEXPRESS;Initial Catalog=QLBanQuanAo;Integrated Security=True";
 
         public FormRegister()
         {
