@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using QLBanQuanAo.DAL;
+using QLBanQuanAo.DAL.Models;
 
 namespace QLBanQuanAo.BUS
 {
-    internal class SanPhamBUS
+    public class SanPhamBUS
     {
+        private SanPhamDAL spDAL = new SanPhamDAL();
+
+        public SanPham LaySanPhamTheoMa(int maSP)
+        {
+            return spDAL.GetSanPhamById(maSP);
+        }
     }
 }
