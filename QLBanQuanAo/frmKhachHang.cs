@@ -16,5 +16,10 @@ namespace QLBanQuanAo
         {
             InitializeComponent();
         }
+
+        private void frmKhachHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -36,5 +36,10 @@ namespace QLBanQuanAo
                 lblMessage.ForeColor = System.Drawing.Color.Red;
             }
         }
+
+        private void FormRegister_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

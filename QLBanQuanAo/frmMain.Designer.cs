@@ -13,6 +13,7 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
+
             if (disposing && (components != null))
             {
                 components.Dispose();
@@ -65,20 +66,23 @@
             // đăngNhâpToolStripMenuItem
             // 
             this.đăngNhâpToolStripMenuItem.Name = "đăngNhâpToolStripMenuItem";
-            this.đăngNhâpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đăngNhâpToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.đăngNhâpToolStripMenuItem.Text = "Đăng nhập";
+            this.đăngNhâpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhâpToolStripMenuItem_Click);
             // 
             // đăngKyToolStripMenuItem
             // 
             this.đăngKyToolStripMenuItem.Name = "đăngKyToolStripMenuItem";
-            this.đăngKyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đăngKyToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.đăngKyToolStripMenuItem.Text = "Đăng ký";
+            this.đăngKyToolStripMenuItem.Click += new System.EventHandler(this.đăngKyToolStripMenuItem_Click);
             // 
             // thoatToolStripMenuItem
             // 
             this.thoatToolStripMenuItem.Name = "thoatToolStripMenuItem";
-            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.thoatToolStripMenuItem.Text = "Thoát";
+            this.thoatToolStripMenuItem.Click += new System.EventHandler(this.thoatToolStripMenuItem_Click);
             // 
             // hêThôngToolStripMenuItem
             // 
@@ -95,18 +99,21 @@
             this.quanLyKhacToolStripMenuItem.Name = "quanLyKhacToolStripMenuItem";
             this.quanLyKhacToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quanLyKhacToolStripMenuItem.Text = "Quản lý khách hàng";
+            this.quanLyKhacToolStripMenuItem.Click += new System.EventHandler(this.quanLyKhacToolStripMenuItem_Click);
             // 
             // thôngKêDoanhThuToolStripMenuItem
             // 
             this.thôngKêDoanhThuToolStripMenuItem.Name = "thôngKêDoanhThuToolStripMenuItem";
             this.thôngKêDoanhThuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thôngKêDoanhThuToolStripMenuItem.Text = "Thống kê doanh thu";
+            this.thôngKêDoanhThuToolStripMenuItem.Click += new System.EventHandler(this.thôngKêDoanhThuToolStripMenuItem_Click);
             // 
             // thôngKêSanPhâmToolStripMenuItem
             // 
             this.thôngKêSanPhâmToolStripMenuItem.Name = "thôngKêSanPhâmToolStripMenuItem";
             this.thôngKêSanPhâmToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thôngKêSanPhâmToolStripMenuItem.Text = "Thống kê sản phẩm";
+            this.thôngKêSanPhâmToolStripMenuItem.Click += new System.EventHandler(this.thôngKêSanPhâmToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -117,6 +124,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
