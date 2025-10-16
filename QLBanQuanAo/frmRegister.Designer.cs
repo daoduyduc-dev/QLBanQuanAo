@@ -1,129 +1,146 @@
-﻿namespace QuanLyBanVe
+﻿namespace QLBanQuanAo
 {
     partial class FormRegister
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.Label lblTenDangNhap;
-        private System.Windows.Forms.Label lblHoTen;
-        private System.Windows.Forms.Label lblMatKhau;
-        private System.Windows.Forms.Label lblXacNhan;
-        private System.Windows.Forms.TextBox txtTenDangNhap;
-        private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.TextBox txtMatKhau;
-        private System.Windows.Forms.TextBox txtXacNhan;
-        private System.Windows.Forms.Button btnDangKy;
-        private System.Windows.Forms.Button btnQuayLai;
 
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
+            {
                 components.Dispose();
+            }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            this.lblTenDangNhap = new System.Windows.Forms.Label();
-            this.lblHoTen = new System.Windows.Forms.Label();
-            this.lblMatKhau = new System.Windows.Forms.Label();
-            this.lblXacNhan = new System.Windows.Forms.Label();
-            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
-            this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
-            this.txtXacNhan = new System.Windows.Forms.TextBox();
-            this.btnDangKy = new System.Windows.Forms.Button();
-            this.btnQuayLai = new System.Windows.Forms.Button();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblFullname = new System.Windows.Forms.Label();
+            this.txtFullname = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblConfirm = new System.Windows.Forms.Label();
+            this.txtConfirm = new System.Windows.Forms.TextBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblTenDangNhap
+            // lblUsername
             // 
-            this.lblTenDangNhap.AutoSize = true;
-            this.lblTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblTenDangNhap.Location = new System.Drawing.Point(40, 40);
-            this.lblTenDangNhap.Text = "Tên đăng nhập:";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(50, 30);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(101, 20);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Tên đăng nhập:";
             // 
-            // lblHoTen
+            // txtUsername
             // 
-            this.lblHoTen.AutoSize = true;
-            this.lblHoTen.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblHoTen.Location = new System.Drawing.Point(40, 90);
-            this.lblHoTen.Text = "Họ tên:";
+            this.txtUsername.Location = new System.Drawing.Point(180, 27);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(200, 27);
+            this.txtUsername.TabIndex = 1;
             // 
-            // lblMatKhau
+            // lblFullname
             // 
-            this.lblMatKhau.AutoSize = true;
-            this.lblMatKhau.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblMatKhau.Location = new System.Drawing.Point(40, 140);
-            this.lblMatKhau.Text = "Mật khẩu:";
+            this.lblFullname.AutoSize = true;
+            this.lblFullname.Location = new System.Drawing.Point(50, 75);
+            this.lblFullname.Name = "lblFullname";
+            this.lblFullname.Size = new System.Drawing.Size(67, 20);
+            this.lblFullname.TabIndex = 2;
+            this.lblFullname.Text = "Họ và tên:";
             // 
-            // lblXacNhan
+            // txtFullname
             // 
-            this.lblXacNhan.AutoSize = true;
-            this.lblXacNhan.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblXacNhan.Location = new System.Drawing.Point(40, 190);
-            this.lblXacNhan.Text = "Xác nhận mật khẩu:";
+            this.txtFullname.Location = new System.Drawing.Point(180, 72);
+            this.txtFullname.Name = "txtFullname";
+            this.txtFullname.Size = new System.Drawing.Size(200, 27);
+            this.txtFullname.TabIndex = 3;
             // 
-            // txtTenDangNhap
+            // lblPassword
             // 
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTenDangNhap.Location = new System.Drawing.Point(200, 40);
-            this.txtTenDangNhap.Width = 220;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(50, 120);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(72, 20);
+            this.lblPassword.TabIndex = 4;
+            this.lblPassword.Text = "Mật khẩu:";
             // 
-            // txtHoTen
+            // txtPassword
             // 
-            this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtHoTen.Location = new System.Drawing.Point(200, 90);
-            this.txtHoTen.Width = 220;
+            this.txtPassword.Location = new System.Drawing.Point(180, 117);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(200, 27);
+            this.txtPassword.TabIndex = 5;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // txtMatKhau
+            // lblConfirm
             // 
-            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtMatKhau.Location = new System.Drawing.Point(200, 140);
-            this.txtMatKhau.Width = 220;
-            this.txtMatKhau.PasswordChar = '*';
+            this.lblConfirm.AutoSize = true;
+            this.lblConfirm.Location = new System.Drawing.Point(50, 165);
+            this.lblConfirm.Name = "lblConfirm";
+            this.lblConfirm.Size = new System.Drawing.Size(124, 20);
+            this.lblConfirm.TabIndex = 6;
+            this.lblConfirm.Text = "Xác nhận mật khẩu:";
             // 
-            // txtXacNhan
+            // txtConfirm
             // 
-            this.txtXacNhan.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtXacNhan.Location = new System.Drawing.Point(200, 190);
-            this.txtXacNhan.Width = 220;
-            this.txtXacNhan.PasswordChar = '*';
+            this.txtConfirm.Location = new System.Drawing.Point(180, 162);
+            this.txtConfirm.Name = "txtConfirm";
+            this.txtConfirm.Size = new System.Drawing.Size(200, 27);
+            this.txtConfirm.TabIndex = 7;
+            this.txtConfirm.UseSystemPasswordChar = true;
             // 
-            // btnDangKy
+            // btnRegister
             // 
-            this.btnDangKy.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnDangKy.Location = new System.Drawing.Point(120, 250);
-            this.btnDangKy.Size = new System.Drawing.Size(100, 35);
-            this.btnDangKy.Text = "Đăng ký";
-            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
+            this.btnRegister.Location = new System.Drawing.Point(180, 210);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(120, 35);
+            this.btnRegister.TabIndex = 8;
+            this.btnRegister.Text = "Đăng ký";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // btnQuayLai
+            // lblMessage
             // 
-            this.btnQuayLai.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnQuayLai.Location = new System.Drawing.Point(260, 250);
-            this.btnQuayLai.Size = new System.Drawing.Size(120, 35);
-            this.btnQuayLai.Text = "Quay lại đăng nhập";
-            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.ForeColor = System.Drawing.Color.Red;
+            this.lblMessage.Location = new System.Drawing.Point(180, 260);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 20);
+            this.lblMessage.TabIndex = 9;
             // 
             // FormRegister
             // 
-            this.ClientSize = new System.Drawing.Size(480, 320);
-            this.Controls.Add(this.lblTenDangNhap);
-            this.Controls.Add(this.lblHoTen);
-            this.Controls.Add(this.lblMatKhau);
-            this.Controls.Add(this.lblXacNhan);
-            this.Controls.Add(this.txtTenDangNhap);
-            this.Controls.Add(this.txtHoTen);
-            this.Controls.Add(this.txtMatKhau);
-            this.Controls.Add(this.txtXacNhan);
-            this.Controls.Add(this.btnDangKy);
-            this.Controls.Add(this.btnQuayLai);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.ClientSize = new System.Drawing.Size(450, 300);
+            this.Controls.Add(this.lblMessage);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.txtConfirm);
+            this.Controls.Add(this.lblConfirm);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtFullname);
+            this.Controls.Add(this.lblFullname);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblUsername);
+            this.Name = "FormRegister";
             this.Text = "Đăng ký tài khoản";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-        #endregion
+
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label lblFullname;
+        private System.Windows.Forms.TextBox txtFullname;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblConfirm;
+        private System.Windows.Forms.TextBox txtConfirm;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Label lblMessage;
     }
 }

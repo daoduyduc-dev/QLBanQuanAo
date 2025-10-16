@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountDAL.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ChiTietHoaDon.cs" />
     <Compile Include="Models\HoaDon.cs" />
