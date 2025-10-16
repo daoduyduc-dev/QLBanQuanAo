@@ -35,9 +35,9 @@
             this.lblTenDn = new System.Windows.Forms.Label();
             this.btnDN = new System.Windows.Forms.Button();
             this.grbDn = new System.Windows.Forms.GroupBox();
-            this.llblDangKy = new System.Windows.Forms.LinkLabel();
-            this.lblGoDK = new System.Windows.Forms.Label();
             this.txtMK = new System.Windows.Forms.TextBox();
+            this.lblGoDK = new System.Windows.Forms.Label();
+            this.llblDangKy = new System.Windows.Forms.LinkLabel();
             this.grbDn.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,16 +99,13 @@
             this.grbDn.Text = "Đăng Nhập";
             this.grbDn.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // llblDangKy
+            // txtMK
             // 
-            this.llblDangKy.AutoSize = true;
-            this.llblDangKy.Location = new System.Drawing.Point(281, 187);
-            this.llblDangKy.Name = "llblDangKy";
-            this.llblDangKy.Size = new System.Drawing.Size(57, 16);
-            this.llblDangKy.TabIndex = 7;
-            this.llblDangKy.TabStop = true;
-            this.llblDangKy.Text = "Đăng Ký";
-            this.llblDangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.txtMK.Location = new System.Drawing.Point(132, 135);
+            this.txtMK.Multiline = true;
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Size = new System.Drawing.Size(206, 36);
+            this.txtMK.TabIndex = 10;
             // 
             // lblGoDK
             // 
@@ -120,13 +117,16 @@
             this.lblGoDK.Text = "Chưa có tài khoản?";
             this.lblGoDK.Click += new System.EventHandler(this.lblGoDK_Click);
             // 
-            // txtMK
+            // llblDangKy
             // 
-            this.txtMK.Location = new System.Drawing.Point(132, 135);
-            this.txtMK.Multiline = true;
-            this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(206, 36);
-            this.txtMK.TabIndex = 10;
+            this.llblDangKy.AutoSize = true;
+            this.llblDangKy.Location = new System.Drawing.Point(281, 187);
+            this.llblDangKy.Name = "llblDangKy";
+            this.llblDangKy.Size = new System.Drawing.Size(57, 16);
+            this.llblDangKy.TabIndex = 7;
+            this.llblDangKy.TabStop = true;
+            this.llblDangKy.Text = "Đăng Ký";
+            this.llblDangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // frmLogin
             // 
@@ -136,6 +136,7 @@
             this.Controls.Add(this.grbDn);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.grbDn.ResumeLayout(false);
             this.grbDn.PerformLayout();
             this.ResumeLayout(false);

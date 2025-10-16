@@ -6,6 +6,20 @@ namespace QLBanQuanAo.BUS
     {
         private AccountDAL accountDAL = new AccountDAL();
 
+        // Phương thức XÁC THỰC NGƯỜI DÙNG (Cho chức năng Đăng nhập)
+        public bool AuthenticateUser(string username, string password)
+        {
+            // Kiểm tra tính hợp lệ cơ bản của dữ liệu
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                return false;
+            }
+
+            // Gọi DAL để kiểm tra trong Database
+            return accountDAL.CheckLogin(username, password);
+        }
+
+        // Phương thức ĐĂNG KÝ (Đã có sẵn từ code bạn cung cấp)
         public string RegisterAccount(string username, string password, string confirmPassword, string fullname)
         {
             if (string.IsNullOrWhiteSpace(username) ||
