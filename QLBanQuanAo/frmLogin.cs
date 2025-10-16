@@ -33,7 +33,6 @@ namespace QLBanQuanAo
             try
             {
                 // 2. GỌI TẦNG BUS ĐỂ XÁC THỰC
-                // Tầng BUS sẽ gọi tầng DAL để kiểm tra khớp với tài khoản trong Database
                 bool isAuthenticated = accountBUS.AuthenticateUser(username, password);
 
                 // 3. Xử lý kết quả trả về
@@ -42,10 +41,21 @@ namespace QLBanQuanAo
                     // THÀNH CÔNG: Mật khẩu khớp với tài khoản ĐÃ ĐĂNG KÝ trong DB
                     MessageBox.Show("Đăng nhập thành công! Chào mừng " + username, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Mở Form Main và ẩn Form Login
-                    frmMain mainForm = new frmMain();
-                    mainForm.Show();
-                    this.Hide();
+                    // ==================================
+                    // PHẦN CODE ĐÃ ĐƯỢC THAY ĐỔI/THÊM VÀO
+                    // ==================================
+
+                    // 1. Cập nhật trạng thái trên Form Main (Nếu Form Login được gọi từ Form Main)
+                    // Nếu bạn đang dùng kỹ thuật truyền tham chiếu Form cha (parentForm), hãy gọi:
+                    // parentForm.UpdateUIStatus(true);
+
+                    // 2. Đóng Form Login hiện tại
+                    this.Close();
+                    // Hoặc dùng this.Hide(); nếu bạn muốn giữ instance của form này nhưng ẩn đi
+
+                    // ==================================
+                    // KẾT THÚC PHẦN SỬA ĐỔI
+                    // ==================================
                 }
                 else
                 {
