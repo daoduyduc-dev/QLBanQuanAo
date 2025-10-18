@@ -25,6 +25,7 @@
             this.txtConfirm = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.lblMessage = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // lblUsername
@@ -122,6 +123,16 @@
             this.lblMessage.Size = new System.Drawing.Size(0, 20);
             this.lblMessage.TabIndex = 9;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(269, 95);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(509, 302);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Đăng Ký";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
             // FormRegister
             // 
             this.ClientSize = new System.Drawing.Size(981, 510);
@@ -135,6 +146,7 @@
             this.Controls.Add(this.lblFullname);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.groupBox1);
             this.Name = "FormRegister";
             this.Text = "Đăng ký tài khoản";
             this.Load += new System.EventHandler(this.FormRegister_Load);
@@ -153,5 +165,6 @@
         private System.Windows.Forms.TextBox txtConfirm;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

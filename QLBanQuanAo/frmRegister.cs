@@ -41,5 +41,10 @@ namespace QLBanQuanAo
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

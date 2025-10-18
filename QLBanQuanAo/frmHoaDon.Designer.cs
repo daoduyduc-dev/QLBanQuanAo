@@ -105,7 +105,7 @@
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.btnTaiLai);
             this.Name = "frmHoaDon";
-            this.Text = "Quản lý Hóa đơn";
+            this.Text = "Thông Kê Doanh Thu";
             this.Load += new System.EventHandler(this.frmHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
             this.ResumeLayout(false);
