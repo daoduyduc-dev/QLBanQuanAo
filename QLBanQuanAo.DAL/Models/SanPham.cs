@@ -1,15 +1,13 @@
-namespace QLBanQuanAo.DAL.Models
+﻿namespace QLBanQuanAo.DAL.Models
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("SanPham")]
     public partial class SanPham
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SanPham()
         {
             ChiTietHoaDon = new HashSet<ChiTietHoaDon>();
@@ -32,7 +30,9 @@ namespace QLBanQuanAo.DAL.Models
         [StringLength(500)]
         public string MoTa { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [StringLength(10)]
+        public string GioiTinh { get; set; } // 👈 Thêm dòng này (Nam/Nu)
+
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDon { get; set; }
     }
 }
