@@ -2,12 +2,22 @@
 {
     partial class frmSanPham
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
+
+        // Khai báo các Controls cần thiết
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSanPham;
+        private System.Windows.Forms.Panel panelTopControls;
         private System.Windows.Forms.Button btnTatCa;
         private System.Windows.Forms.Button btnDoNam;
         private System.Windows.Forms.Button btnDoNu;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -17,134 +27,105 @@
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.flowLayoutPanelSanPham = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelTopControls = new System.Windows.Forms.Panel();
+            this.btnDoNu = new System.Windows.Forms.Button();
+            this.btnDoNam = new System.Windows.Forms.Button();
+            this.btnTatCa = new System.Windows.Forms.Button();
+            this.panelTopControls.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // flowLayoutPanelSanPham
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(130, 86);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 171);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.flowLayoutPanelSanPham.AutoScroll = true;
+            this.flowLayoutPanelSanPham.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.flowLayoutPanelSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanelSanPham.Location = new System.Drawing.Point(0, 70);
+            this.flowLayoutPanelSanPham.Name = "flowLayoutPanelSanPham";
+            this.flowLayoutPanelSanPham.Padding = new System.Windows.Forms.Padding(10);
+            this.flowLayoutPanelSanPham.Size = new System.Drawing.Size(1173, 602);
+            this.flowLayoutPanelSanPham.TabIndex = 0;
             // 
-            // pictureBox2
+            // panelTopControls
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(394, 86);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(165, 171);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.panelTopControls.Controls.Add(this.btnDoNu);
+            this.panelTopControls.Controls.Add(this.btnDoNam);
+            this.panelTopControls.Controls.Add(this.btnTatCa);
+            this.panelTopControls.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTopControls.Location = new System.Drawing.Point(0, 0);
+            this.panelTopControls.Name = "panelTopControls";
+            this.panelTopControls.Size = new System.Drawing.Size(1173, 70);
+            this.panelTopControls.TabIndex = 1;
             // 
-            // pictureBox3
+            // btnDoNu
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(670, 86);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(165, 171);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnDoNu.BackColor = System.Drawing.Color.LightCoral;
+            this.btnDoNu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoNu.FlatAppearance.BorderSize = 0;
+            this.btnDoNu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoNu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoNu.ForeColor = System.Drawing.Color.White;
+            this.btnDoNu.Location = new System.Drawing.Point(395, 12);
+            this.btnDoNu.Name = "btnDoNu";
+            this.btnDoNu.Size = new System.Drawing.Size(120, 45);
+            this.btnDoNu.TabIndex = 2;
+            this.btnDoNu.Text = "Đồ Nữ";
+            this.btnDoNu.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
+            // btnDoNam
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(957, 86);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(165, 171);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnDoNam.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDoNam.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoNam.FlatAppearance.BorderSize = 0;
+            this.btnDoNam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoNam.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoNam.ForeColor = System.Drawing.Color.White;
+            this.btnDoNam.Location = new System.Drawing.Point(269, 12);
+            this.btnDoNam.Name = "btnDoNam";
+            this.btnDoNam.Size = new System.Drawing.Size(120, 45);
+            this.btnDoNam.TabIndex = 1;
+            this.btnDoNam.Text = "Đồ Nam";
+            this.btnDoNam.UseVisualStyleBackColor = false;
             // 
-            // pictureBox5
+            // btnTatCa
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(130, 352);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(165, 171);
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(394, 352);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(165, 171);
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(670, 352);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(165, 171);
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(957, 352);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(165, 171);
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnTatCa.BackColor = System.Drawing.Color.Gray;
+            this.btnTatCa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTatCa.FlatAppearance.BorderSize = 0;
+            this.btnTatCa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTatCa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTatCa.ForeColor = System.Drawing.Color.White;
+            this.btnTatCa.Location = new System.Drawing.Point(143, 12);
+            this.btnTatCa.Name = "btnTatCa";
+            this.btnTatCa.Size = new System.Drawing.Size(120, 45);
+            this.btnTatCa.TabIndex = 0;
+            this.btnTatCa.Text = "Tất Cả";
+            this.btnTatCa.UseVisualStyleBackColor = false;
             // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1173, 672);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.flowLayoutPanelSanPham);
+            this.Controls.Add(this.panelTopControls);
             this.Name = "frmSanPham";
-            this.Text = "frmSanPham";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.Text = "Quản Lý Sản Phẩm";
+            this.Load += new System.EventHandler(this.frmSanPham_Load_2);
+            this.panelTopControls.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        // Chú ý: Tất cả các khai báo PictureBox cũ và dòng khai báo thừa panelTopControls đã được loại bỏ.
     }
 }
