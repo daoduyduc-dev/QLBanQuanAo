@@ -81,6 +81,7 @@
             this.btnDN.TabIndex = 6;
             this.btnDN.Text = "Đăng Nhập";
             this.btnDN.UseVisualStyleBackColor = true;
+            this.btnDN.Click += new System.EventHandler(this.btnDN_Click_1);
             // 
             // grbDn
             // 
