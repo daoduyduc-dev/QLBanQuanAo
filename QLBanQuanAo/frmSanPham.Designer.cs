@@ -28,7 +28,7 @@
             // flowLayoutPanelSanPham
             // 
             this.flowLayoutPanelSanPham.AutoScroll = true;
-            this.flowLayoutPanelSanPham.Location = new System.Drawing.Point(12, 60);
+            this.flowLayoutPanelSanPham.Location = new System.Drawing.Point(12, 53);
             this.flowLayoutPanelSanPham.Name = "flowLayoutPanelSanPham";
             this.flowLayoutPanelSanPham.Size = new System.Drawing.Size(860, 500);
             this.flowLayoutPanelSanPham.TabIndex = 0;

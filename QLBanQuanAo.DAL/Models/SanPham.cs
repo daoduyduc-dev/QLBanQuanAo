@@ -8,11 +8,6 @@
     [Table("SanPham")]
     public partial class SanPham
     {
-        public SanPham()
-        {
-            ChiTietHoaDon = new HashSet<ChiTietHoaDon>();
-        }
-
         [Key]
         public int MaSP { get; set; }
 
@@ -30,8 +25,13 @@
         [StringLength(500)]
         public string MoTa { get; set; }
 
+        // 👉 Thêm thuộc tính giới tính
         [StringLength(10)]
-        public string GioiTinh { get; set; } // 👈 Thêm dòng này (Nam/Nu)
+        public string GioiTinh { get; set; }
+
+        // 👉 Thêm thuộc tính hình ảnh
+        [StringLength(255)]
+        public string HinhAnh { get; set; }
 
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDon { get; set; }
     }

@@ -21,10 +21,9 @@ namespace QLBanQuanAo.UI
 
         private void frmSanPham_Load(object sender, EventArgs e)
         {
-            danhSachSP = spBUS.LayTatCaSanPham(); // ✅ Đúng tên hàm trong SanPhamBUS
+            danhSachSP = spBUS.LayDanhSachSanPham();
             HienThiSanPham(danhSachSP);
         }
-
 
         private void HienThiSanPham(List<SanPham> listSP)
         {
@@ -50,12 +49,13 @@ namespace QLBanQuanAo.UI
                     Tag = sp.MaSP
                 };
 
-                string imagePath = Path.Combine(Application.StartupPath, "Images", $"{sp.MaSP}.jpg");
+                string imagePath = Path.Combine(Application.StartupPath, "Images", sp.HinhAnh);
                 if (File.Exists(imagePath))
                     pic.Image = Image.FromFile(imagePath);
                 else
                     pic.Image = Properties.Resources.nothing;
 
+                // Gán sự kiện click
                 pic.Click += Pic_Click;
 
                 // Tên sản phẩm
@@ -94,7 +94,7 @@ namespace QLBanQuanAo.UI
         private void Pic_Click(object sender, EventArgs e)
         {
             PictureBox pic = sender as PictureBox;
-            int maSP = Convert.ToInt32(pic.Tag);
+            int maSP = (int)pic.Tag;
 
             frmChiTietSanPham frm = new frmChiTietSanPham(maSP);
             frm.ShowDialog();
@@ -107,13 +107,17 @@ namespace QLBanQuanAo.UI
 
         private void btnDoNam_Click(object sender, EventArgs e)
         {
-            var spNam = danhSachSP.Where(x => x.GioiTinh == "Nam").ToList();
+            var spNam = danhSachSP
+                .Where(x => x.GioiTinh.ToLower().Contains("nam"))
+                .ToList();
             HienThiSanPham(spNam);
         }
 
         private void btnDoNu_Click(object sender, EventArgs e)
         {
-            var spNu = danhSachSP.Where(x => x.GioiTinh == "Nu").ToList();
+            var spNu = danhSachSP
+                .Where(x => x.GioiTinh.ToLower().Contains("nu"))
+                .ToList();
             HienThiSanPham(spNu);
         }
     }

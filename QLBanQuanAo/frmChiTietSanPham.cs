@@ -36,13 +36,14 @@ namespace QLBanQuanAo.UI
                 nudSoLuong.Maximum = sp.SoLuongTon;
                 nudSoLuong.Value = sp.SoLuongTon > 0 ? 1 : 0;
 
-                string imagePath = Path.Combine(Application.StartupPath, "Images", $"{sp.MaSP}.jpg");
+                string imagePath = Path.Combine(Application.StartupPath, "Images", sp.HinhAnh);
                 if (File.Exists(imagePath))
                     picSanPham.Image = Image.FromFile(imagePath);
                 else
                     picSanPham.Image = Properties.Resources.nothing;
             }
         }
+
 
         private void btnMuaHang_Click(object sender, EventArgs e)
         {
